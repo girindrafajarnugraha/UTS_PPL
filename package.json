@@ -1,0 +1,20 @@
+{
+  "name": "cypress-fwk",
+  "version": "1.0.0",
+  "description": "Siakad automated login",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open"
+  },
+  "keywords": [
+    "test",
+    "automation",
+    "cypress"
+  ],
+  "author": "dhimas.arbi",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.4.1"
+  }
+}
