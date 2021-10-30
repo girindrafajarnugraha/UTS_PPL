@@ -1,7 +1,7 @@
 {
-  "name": "cypress-fwk",
+  "name": "saucedemo-webtest",
   "version": "1.0.0",
-  "description": "Siakad automated login",
+  "description": "Testing fitur web saucedemo",
   "main": "index.js",
   "scripts": {
     "test": "test",
@@ -15,6 +15,6 @@
   "author": "dhimas.arbi",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^8.4.1"
+    "cypress": "^8.7.0"
   }
 }
