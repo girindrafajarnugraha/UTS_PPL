@@ -11,5 +11,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-        spec: 
-          cypress/integration/add_remove_item_to_cart_pass.js
+          spec: cypress/integration/add_remove_item_to_cart_pass.js
