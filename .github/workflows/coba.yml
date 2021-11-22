@@ -11,7 +11,7 @@ jobs:
       - name: Cypress tests
         uses: ./
         with:
-          working-directory: examples/config
+          working-directory: saucedemo-webtest
           build: npm run build
           start: npm start
           wait-on: 'http://localhost:3333'
@@ -27,7 +27,7 @@ jobs:
       - name: Cypress tests
         uses: ./
         with:
-          working-directory: examples/config
+          working-directory: saucedemo-webtest
           build: npm run build
           start: npm start
           wait-on: 'http://localhost:3333'
