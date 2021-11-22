@@ -13,6 +13,3 @@ jobs:
         with:
           spec: |
           saucedemo-webtest/cypress/integration/add_remove_item_to_cart_pass.js
-          saucedemo-webtest/cypress/integration/add_remove_item_to_cart_fail.js
-          saucedemo-webtest/cypress/integration/add_to_cart_pass.js
-          saucedemo-webtest/cypress/integration/add_to_cart_fail.js
