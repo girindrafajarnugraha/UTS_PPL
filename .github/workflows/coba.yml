@@ -1,39 +1,18 @@
 name: Cypress tests
 on: [push]
 jobs:
-  start:
-    # example where we pass custom base URL
+  cypress-run:
+    name: Cypress run
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Cypress tests
-        uses: ./
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
         with:
-          working-directory: saucedemo-webtest
-          build: npm run build
-          start: npm start
-          wait-on: 'http://localhost:3333'
-          config: baseUrl=http://localhost:3333
-
-  separate-specs:
-    # example where we pass specs to run via multiple lines
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Cypress tests
-        uses: ./
-        with:
-          working-directory: saucedemo-webtest
-          build: npm run build
-          start: npm start
-          wait-on: 'http://localhost:3333'
-          config: baseUrl=http://localhost:3333
           spec: |
-            cypress/integration/add_remove_item_to_cart_pass.js
-            cypress/integration/add_to_cart_pass.js
-            cypress/integration/add_to_cart_fail.js
-
+          saucedemo-webtest/cypress/integration/add_remove_item_to_cart_pass.js
+          saucedemo-webtest/cypress/integration/add_remove_item_to_cart_fail.js
+          saucedemo-webtest/cypress/integration/add_to_cart_pass.js
+          saucedemo-webtest/cypress/integration/add_to_cart_fail.js
