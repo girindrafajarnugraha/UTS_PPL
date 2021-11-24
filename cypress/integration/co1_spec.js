@@ -12,5 +12,6 @@ context('Checkout', () => {
         cy.get('#postal-code').type('645615')
         cy.get('#continue').click()
         cy.get('#finish').click()
+        cy.get('#checkout_complete_container').should('be.visible')
     })
 })

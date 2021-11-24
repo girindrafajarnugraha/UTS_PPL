@@ -20,7 +20,8 @@ context('Cypress Add to chart', () => {
         // cy.get('#item_4_title_link > .inventory_item_name').click()
 
         // klik add to cart
-        cy.get('[data-test=add-to-cart-sauce-labs-fleece-jacket]').click() 
+        cy.get('[data-test=add-to-cart-sauce-labs-fleece-jacket]').click()
+        cy.get('[data-test=add-to-cart-sauce-labs-fleece-jacket]').should('have.focus')
     })
 
 })

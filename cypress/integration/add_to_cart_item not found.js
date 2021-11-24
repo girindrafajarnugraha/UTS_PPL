@@ -17,6 +17,9 @@ context('Cypress Add to chart', () => {
         // cy.login_standard()
         // cy.get('#item_4_title_link > .inventory_item_name').click()
         cy.get('[data-test=add-to-cart-item-not-found]').click() // klik add to cart
+        cy.get('.inventory_details_name').should(($txt) => {
+            expect($txt).to.have.text('ITEM NOT FOUND')
+        })
     })
 
 })

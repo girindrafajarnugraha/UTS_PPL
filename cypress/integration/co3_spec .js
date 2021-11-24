@@ -10,6 +10,11 @@ context('Checkout', () => {
         cy.get('#first-name').type('Aula')
         cy.get('#last-name').type('Faridah')
         cy.get('#continue').click()
+        cy.get('.error-message-container')
+        .find('[data-test=error]')
+        .should(($error) => {
+            expect($error).to.have.text('Error: Postal Code is required')
+        })
     })
     //hasil error, postal code harus diisi
 })

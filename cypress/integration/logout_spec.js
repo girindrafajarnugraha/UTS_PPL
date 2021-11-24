@@ -8,5 +8,6 @@ context('Cypress Logout', () => {
     it('Logout skenario', ()=>{
         cy.get('#react-burger-menu-btn').click() // klik dropdown
         cy.get('#logout_sidebar_link').click() // klik logout
+        cy.get('.login_wrapper-inner').should('be.visible')
     })
 })

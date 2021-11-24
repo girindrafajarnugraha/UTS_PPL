@@ -8,5 +8,9 @@ context('Cypress Sort', () => {
     it('Sort', ()=>{
         // test case add to cart
         cy.get('[data-test=product_sort_container]').select('za') // klik sort
+        cy.get('[data-test=product_sort_container]')
+        .should(($error) => {
+            expect($error).to.contain('Name (Z to A)')
+        })
     })
 })

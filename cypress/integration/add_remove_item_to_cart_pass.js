@@ -18,6 +18,7 @@ context('Cypress Add to chart', () => {
         // cy.get('#item_4_title_link > .inventory_item_name').click()
         cy.get('[data-test=add-to-cart-sauce-labs-bolt-t-shirt]').click() // klik add to cart
         cy.get('[data-test=remove-sauce-labs-bolt-t-shirt]').click() // klik remove
+        cy.get('[data-test=add-to-cart-sauce-labs-bolt-t-shirt]').should('be.visible')
     })
 
 })

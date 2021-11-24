@@ -10,6 +10,11 @@ context('Checkout', () => {
         cy.get('#last-name').type('Faridah')
         cy.get('#postal-code').type('645615')
         cy.get('#continue').click()
+        cy.get('.error-message-container')
+        .find('[data-test=error]')
+        .should(($error) => {
+            expect($error).to.have.text('Error: First Name is required')
+        })
     })
     //hasil eror, first name harus diisi
 })
