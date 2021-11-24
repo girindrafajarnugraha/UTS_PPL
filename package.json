@@ -15,6 +15,6 @@
   "author": "dhimas.arbi",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^8.7.0"
+    "cypress": "^9.1.0"
   }
 }
