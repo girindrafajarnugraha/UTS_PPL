@@ -1,10 +1,9 @@
 {
   "name": "saucedemo-webtest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Testing fitur web saucedemo",
   "main": "index.js",
   "scripts": {
-    "test": "test",
     "cypress:open": "cypress open"
   },
   "keywords": [
@@ -15,6 +14,9 @@
   "author": "dhimas.arbi",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.1.0"
+    "cypress": "^9.1.0",
+    "mochawesome":"^7.0.1",
+    "mochawesome-merge":"^4.2.0",
+    "mochawesome-report-generator":"^6.0.1"
   }
 }
