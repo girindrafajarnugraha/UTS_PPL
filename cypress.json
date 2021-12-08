@@ -3,12 +3,13 @@
     "ignoreTestFiles": [
         "**/1-getting-started/*", 
         "**/2-advanced-examples/*"],
+    "reporter": "mochawesome",
     "reporterOptions": {
         "reportDir": "cypress/results",
         "overwrite": false,
         "html": false,
         "json": true,
-        "videoOnRunFailure": true
+        "videoUploadOnPasses":false
     },
     "chromeWebSecurity": false
 }
