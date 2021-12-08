@@ -3,7 +3,7 @@ context('Cypress Add to chart', () => {
         cy.fixture("userproblem").then((userproblem) => {
             const user = userproblem.username; // mengambil data username dan pass dari fixtures/userproblem.json
             const pass = userproblem.password;
-            cy.visit('https://www.saucedemo.com') // mengunjungi website
+            cy.visit('/') // mengunjungi website
             cy.get('#user-name').type(user) // cari input username kemudian otomatis isi dengan username
             cy.get('#password').type(pass) // cari input password kemudian otomatis isi dengan password
             cy.get('#login-button').click() // klik login
