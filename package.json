@@ -4,14 +4,19 @@
   "description": "Testing fitur web saucedemo",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:test": "npx cypress run",
+    "cypress:merge": "npx mochawesome-merge \"cypress/results/*.json\"> mochawesome.json",
+    "cypress:report": "npx marge mochawesome.json",
+    "cypress:prereport":"rm -rf cypress/results/; rm -rf mochawesome-report/; rm mochawesome.json",
+    "cypress:testall":"npm run cypress:test; npm run cypress:merge; npm run cypress:report"
   },
   "keywords": [
     "test",
     "automation",
     "cypress"
   ],
-  "author": "dhimas.arbi",
+  "author": "Kelompok 1",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^9.1.0",

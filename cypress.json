@@ -3,5 +3,12 @@
     "ignoreTestFiles": [
         "**/1-getting-started/*", 
         "**/2-advanced-examples/*"],
+    "reporterOptions": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "videoOnRunFailure": true
+    },
     "chromeWebSecurity": false
 }
